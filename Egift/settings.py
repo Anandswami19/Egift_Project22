@@ -39,8 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'serviceprovider',
-    'user',
+    'cart',
+    'simpleform',
+    'crispy_forms',
+    'userapp',
+
 ]
+AUTH_USER_MODEL = 'userapp.User'
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -81,7 +88,7 @@ WSGI_APPLICATION = 'Egift.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'egift',
+        'NAME': 'internship_project',
         'USER':'postgres',
         'PASSWORD':'12345678',
         'HOST':'localhost',
@@ -131,3 +138,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_REDIRECT_URL = '/admin'
+LOGOUT_REDIRECT_URL = '/admin'
