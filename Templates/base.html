@@ -1,57 +1,29 @@
+{% load static %} 
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  {% block meta_tags %}{% endblock %}
-  <title>{% block title %}welcome{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+	<link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/niceselect.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'css/flex-slider.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl-carousel.css' %}">
+	<link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 
-  {% block css %}
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  {% endblock %}
-
-  {% block custom_css %}
-  {% endblock %}
 </head>
+
 <body>
-
-  {% block navbar %}
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">CRUD in Dj</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'list_serviceprovider' %}">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'add_serviceprovider' %}">ADD SERVICE PROVIDER</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'logout' %}">logout</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  {% endblock %}
-
-  <div class="container mt-4">
-  {% block container %}
-  {% endblock %}
-  </div>
-
-  {% block js %}
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  {% endblock %}
-
-  {% block custom_js %}
-  {% endblock %}
+  
+	
+	
 </body>
 </html>
+
