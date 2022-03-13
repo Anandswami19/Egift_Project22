@@ -66,9 +66,7 @@ ROOT_URLCONF = 'Egift.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            'templates'
-        ],
+        'DIRS': [TEMPLATES_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -140,7 +138,6 @@ STATIC_ROOT = '/static'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

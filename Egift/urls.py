@@ -25,7 +25,9 @@ urlpatterns = [
     path('cart/', include('cart.urls')),
     path('simpleform/', include('simpleform.urls')),
     path('user/', include('userapp.urls')),
-    path('', TemplateView.as_view(template_name='index.html')),
+    
+    
+    
 
 
 

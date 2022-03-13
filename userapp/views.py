@@ -29,4 +29,5 @@ class BaseRegisterView(SuccessMessageMixin, FormView):
         username = cleaned_data["username"]
         return username + " - User Created Successfully..!!"
 
-    
+def index(request):
+    return render(request,'index.html')
